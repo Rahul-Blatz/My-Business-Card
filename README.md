@@ -6,7 +6,7 @@ An application that holds your links to contact informations and works.
 
 
 ## Packages Used
-![URL LAUNCHER](https://pub.dev/packages/url_launcher)
+URL Launcher - https://pub.dev/packages/url_launcher
 
 ## ScreenShot
 ![ScreenShot](/Screenshot_20200415-194110.jpg)
