@@ -2,12 +2,11 @@
 
 A Business Card application.
 
-An application that holds your contact informations and works.
+An application that holds your links to contact informations and works.
 
 
 ## Packages Used
-https://pub.dev/packages/url_launcher- automatic!
-[GitHub](https://pub.dev/packages/url_launcher)
+![URL LAUNCHER](https://pub.dev/packages/url_launcher)
 
 ## ScreenShot
 ![ScreenShot](/Screenshot_20200415-194110.jpg)
