@@ -49,6 +49,25 @@ class _MyCardState extends State<MyCard> {
     }
   }
 
+  Card buildCard(IconData icon, String data) {
+    return Card(
+      child: ListTile(
+        title: Text(
+          '$data',
+          style: TextStyle(
+            fontSize: 20,
+            color: Color(bgColor),
+            fontFamily: 'Bangers',
+          ),
+        ),
+        leading: Icon(
+          icon,
+          color: Color(bgColor),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -104,43 +123,21 @@ class _MyCardState extends State<MyCard> {
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(
                   onTap: () => _service.call('8667342705'),
-                  child: Card(
-                    child: ListTile(
-                      title: Text(
-                        '+91 8667342705',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Color(bgColor),
-                          fontFamily: 'Bangers',
-                        ),
-                      ),
-                      leading: Icon(
-                        Icons.call,
-                        color: Color(bgColor),
-                      ),
-                    ),
+                  child: buildCard(
+                    Icons.call,
+                    '+91 8667342705',
                   ),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(
-                  onTap: () => _service.mail('rahulblatz002@gmail.com'),
-                  child: Card(
-                    child: ListTile(
-                      title: Text(
-                        'rahulblatz002@gmail.com',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Color(bgColor),
-                          fontFamily: 'Bangers',
-                        ),
-                      ),
-                      leading: Icon(
-                        Icons.mail,
-                        color: Color(bgColor),
-                      ),
-                    ),
+                  onTap: () => _service.mail(
+                    'rahulblatz002@gmail.com',
+                  ),
+                  child: buildCard(
+                    Icons.mail,
+                    'rahulblatz002@gmail.com',
                   ),
                 ),
               ),
@@ -149,21 +146,9 @@ class _MyCardState extends State<MyCard> {
                 child: GestureDetector(
                   onTap: () =>
                       _launchInBrowser('https://github.com/Rahul-Blatz'),
-                  child: Card(
-                    child: ListTile(
-                      title: Text(
-                        'Github-Rahul-Blatz',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Color(bgColor),
-                          fontFamily: 'Bangers',
-                        ),
-                      ),
-                      leading: Icon(
-                        CommunityMaterialIcons.github_circle,
-                        color: Color(bgColor),
-                      ),
-                    ),
+                  child: buildCard(
+                    CommunityMaterialIcons.github_circle,
+                    'github-rahul-blatz',
                   ),
                 ),
               ),
