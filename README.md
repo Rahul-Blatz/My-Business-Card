@@ -7,13 +7,12 @@ An application that holds your links to contact informations and works.
 
 ## Packages Used
 URL Launcher - https://pub.dev/packages/url_launcher
+Community Material Icons - https://pub.dev/packages/community_material_icon
 
 ## ScreenShot
-![ScreenShot](/Screenshot_20200415-194110.jpg)
+![ScreenShot](/SS.jpg)
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
