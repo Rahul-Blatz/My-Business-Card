@@ -1,3 +1,4 @@
+import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:get_it/get_it.dart';
@@ -53,10 +54,11 @@ class _MyCardState extends State<MyCard> {
     return Center(
       child: Stack(
         children: <Widget>[
-          FittedBox(
-            fit: BoxFit.fitWidth,
-            child: Image.asset(
-              'images/BG.jpg',
+          SizedBox.expand(
+            child: FittedBox(
+              child: Image.asset(
+                'images/BG.jpg',
+              ),
             ),
           ),
           Column(
@@ -150,7 +152,7 @@ class _MyCardState extends State<MyCard> {
                         ),
                       ),
                       leading: Icon(
-                        Icons.computer,
+                        CommunityMaterialIcons.github_circle,
                         color: Color(bgColor),
                       ),
                     ),
