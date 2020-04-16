@@ -64,10 +64,18 @@ class _MyCardState extends State<MyCard> {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              CircleAvatar(
-                radius: 50,
-                backgroundImage: AssetImage('images/avatar.jpeg'),
-              ),
+              Container(
+                  child: CircleAvatar(
+                    radius: 50,
+                    backgroundImage: const AssetImage('images/avatar.jpeg'),
+                  ),
+                  width: 100.0,
+                  height: 100.0,
+                  padding: const EdgeInsets.all(2.0), // borde width
+                  decoration: new BoxDecoration(
+                    color: const Color(0xFFFFFFFF), // border color
+                    shape: BoxShape.circle,
+                  )),
               Padding(
                 padding: const EdgeInsets.only(top: 8.0),
                 child: Text(
