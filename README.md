@@ -6,11 +6,11 @@ An application that holds your links to contact informations and works.
 
 
 ## Packages Used
-URL Launcher - https://pub.dev/packages/url_launcher
+URL Launcher - https://pub.dev/packages/url_launcher  
 Community Material Icons - https://pub.dev/packages/community_material_icon
 
 ## ScreenShot
-![ScreenShot](/SS.jpg)
+![ScreenShot](/new_ss.jpg)
 
 ## Getting Started
 
