@@ -71,7 +71,7 @@ class _MyCardState extends State<MyCard> {
                   ),
                   width: 100.0,
                   height: 100.0,
-                  padding: const EdgeInsets.all(2.0), // borde width
+                  padding: const EdgeInsets.all(2.0), // border width
                   decoration: new BoxDecoration(
                     color: const Color(0xFFFFFFFF), // border color
                     shape: BoxShape.circle,
