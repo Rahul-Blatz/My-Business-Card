@@ -71,16 +71,15 @@ class _MyCardState extends State<MyCard> {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Stack(
-        children: <Widget>[
-          SizedBox.expand(
-            child: FittedBox(
-              child: Image.asset(
-                'images/BG.jpg',
-              ),
+      child: SafeArea(
+        child: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/BG.jpg'),
+              fit: BoxFit.cover,
             ),
           ),
-          Column(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Container(
@@ -154,7 +153,7 @@ class _MyCardState extends State<MyCard> {
               ),
             ],
           ),
-        ],
+        ),
       ),
     );
   }
